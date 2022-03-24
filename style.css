@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    color: #cdcfd4;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #4364b9;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 0 15px;
+}
+.bg-light{
+    background-color: #323647;
+}
+.bg-dark{
+ background-color: #242734;
+}
+.headline{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin:10px auto 20px auto;
+}
+
+hr{
+    width: 150px;
+    margin: 10px 0 20px 0;
+    border-width: 1px;
+    border-color: #ffc25b;
+    border-style: solid;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin: 10px auto 20px auto;
+}
+.section-padding{
+    padding: 50px 0;
+}
+/*nav bar ------*/
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+    transition: background 0.5s;
+}
+nav li a:hover{
+   color:#ffc25b;
+}
+.nav_wrapper{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+}
+.logo a{
+    font-size: 26px;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 15px 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+/*shivam css*/
+.icon{
+   position: fixed;
+   width: 65px;
+   background:white;
+   margin-top: 150px;
+   box-shadow: 2px 2px 8px rgba(red, green, blue, alpha);
+   
+
+}
+.icon li{
+   height: 60px;
+   position: relative;
+   display: block;
+   
+   font-weight: 300;
+   
+}
+.icon li span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    line-height: 60px;
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(red, green, blue, alpha);
+    font-weight: bold;
+
+}
+.shivam{
+   background-image: url("./img/shivam1\ \(1\).jpeg");
+    background-color: #323647;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+.shivam img{
+    display: none;
+}
+.shivam h1{
+    font-size: 43px;
+    position:absolute;
+    top: 50%;
+    left: 20%;
+}
+ #spn{
+    color: #ffc25b;
+    position: absolute;
+    top: 65%;
+    left: 23%;
+}
+.section{
+    display: flex;
+    position: relative;
+    top: 50%;
+    right: 70%;
+}
+.hire{
+    border: 2px solid #ffc25b;
+    color: #ffc25b;
+    padding: 10px 20px;
+    display: inline-block;
+    left: 34px;
+    margin-top: 23px;
+    font-weight: bold;
+    transition: all 0.30s ease 0s;
+    }
+.hire .btn:hover{
+    background-color: #ffc25b;
+    color:#242734;
+    
+    }
+
+/*About section------*/
+
+.about-wrapper{
+    display: flex;
+    grid-gap:30px;
+    margin-top: 50px;
+}
+.about-wrapper div{
+    flex:1;
+}
+
+.about-wrapper img{
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-wrapper .btn{
+     border: 2px solid #ffc25b;
+     color: #ffc25b;
+     padding: 10px 20px;
+     display: inline-block;
+     margin-top: 20px;
+     font-weight: bold;
+     transition: all 0.30s ease 0s;
+}
+.about-wrapper .btn:hover{
+    background-color: #ffc25b;
+    color:#242734;
+
+}
+
+
+/*skill set*/
+
+.skill-wrapper{
+    display: flex;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-set{
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+    border: 2px solid black;
+    transition: all 0.30s ease 0s;
+}
+.skill-set:hover{
+    background:#242734;
+}
+
+.skill-icon{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background:#ffc25b;
+    border-radius: 50px;
+    color:#242734;
+    font-size: 35px;
+    line-height: 80px;
+    transform: translateY(0);
+    transition: all 0.30s ease 0s;
+}
+
+.skill-set:hover .skill-icon{
+    transform: translateY(-100%);
+}
+.skill-set h3{
+     position: relative;
+     top: 40px;
+     font-size: 23px;
+     text-transform: uppercase;
+     transform: translateY(0);
+     transition: all 0.30s linear 0s;
+}
+.skill-set:hover h3{
+    top:-40px;
+}
+
+.skill-set p{
+    opacity: 0;
+    margin-bottom:0;
+    transition: all 0.30s linear 0s;
+}
+.skill-set:hover p{
+   opacity: 1;  
+}
+ span{
+    color: #ffc25b;
+}
+
+
+/*contact section*/
+
+.contact-info{
+       padding: 30px;
+}
+.contact-info span{
+    font-size: medium;
+    margin: 20px;
+    
+}
